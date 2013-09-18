@@ -1,14 +1,17 @@
 /*
   Button
  
- Turns on and off a light emitting diode(LED) connected to digital  
- pin 13, when pressing a pushbutton attached to pin 2. 
+ Turns on Red LED connected to digital  
+ pin 10, when pressing any pushbutton attached to pins 1, 2, 3, or 4. 
+ 
+ Turns on Blue LED connected to digital 
+ pin 13, when NOT pressing any pushbutton attached to pins 1, 2, 3, or 4. 
  
  
  The circuit:
- * LED attached from pin 13 to ground 
- * pushbutton attached to pin 2 from +5V
- * 10K resistor attached to pin 2 from ground
+ * LEDs attached from pins 10, 11, 12 and 13 to ground 
+ * momentary pushbuttons attached to pins 1, 2, 3 and 4 from +5V
+ * 10K resistor attached to pins 1, 2, 3 and 4 from ground
  
 As modified by Colin Chapman [ChapLab]
  
