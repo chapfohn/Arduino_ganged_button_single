@@ -47,19 +47,12 @@ void loop(){
   buttonCstate = digitalRead(buttonC);                // read the state of the pushbuttons
   buttonDstate = digitalRead(buttonD);                // read the state of the pushbuttons
 
-  if (buttonAstate == HIGH || buttonBstate == LOW || buttonCstate == LOW || buttonDstate == LOW) {       // check button A state is exclusive HIGH; HIGH is pressed   
+  if (buttonAstate == HIGH || buttonBstate == HIGH || buttonCstate == HIGH || buttonDstate == HIGH) {       // check button A state is exclusive HIGH; HIGH is pressed   
      
     digitalWrite(ledRED, HIGH);                                                                          // this can be used to set motors and/or servo sequences
   } 
-  else if (buttonAstate == LOW && buttonBstate == HIGH && buttonCstate == LOW && buttonDstate == LOW) {  // check button B state is exclusive HIGH; HIGH is pressed 
-    
-    digitalWrite(ledGREEN, HIGH);                                                                        // this can be used to set motors and/or servo sequences
-  }
-  else if (buttonAstate == LOW && buttonBstate == LOW && buttonCstate == HIGH && buttonDstate == LOW) {  // check button C state is exclusive HIGH; HIGH is pressed 
   
-    digitalWrite(ledYELLOW, HIGH);                                                                       // this can be used to set motors and/or servo sequences
-  }  
-  else if (buttonAstate == LOW && buttonBstate == LOW && buttonCstate == LOW && buttonDstate == HIGH) {  // check button D state is exclusive HIGH; HIGH is pressed 
+  else 
   
     digitalWrite(ledBLUE, HIGH);                                                                         // this can be used to set motors and/or servo sequences
   }
